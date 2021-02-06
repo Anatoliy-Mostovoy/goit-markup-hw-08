@@ -1,15 +1,20 @@
 .portfolio-buttons{
-    display: flex;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  
+  @media screen and(min-width: $tablet) {
     justify-content: center;
-    margin-bottom: 50px;
-
-   &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+ 
+  &__item:not(:last-child) {
     margin-right: 8px;
     }
-    
-   &__button {
+
+  &__button {
     padding: 6px 22px;
+    margin-bottom: 15px;
     background-color: $bgc-second;
     color: $tc-black;
     border-radius: 4px;
@@ -26,6 +31,11 @@
     transition-property: background-color, color, filter;
     transition-duration: $duretion;
     transition-timing-function: $cubic;
+
+    @media screen and(min-width: $tablet) {
+      margin-bottom: 0;
+    }
+
     }
     
    &__button:focus,
@@ -34,7 +44,5 @@
     background-color: $acent;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
-      
-  }
-  
-  
+
+}

@@ -1148,13 +1148,18 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-buttons__item:not(:last-child) {
@@ -1163,6 +1168,7 @@ footer {
 
 .portfolio-buttons__button {
   padding: 6px 22px;
+  margin-bottom: 15px;
   background-color: #f5f4fa;
   color: #212121;
   border-radius: 4px;
@@ -1182,6 +1188,12 @@ footer {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-buttons__button {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-buttons__button:focus, .portfolio-buttons__button:hover {
