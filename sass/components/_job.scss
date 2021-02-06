@@ -2,9 +2,11 @@
     display: none;
 
     @media screen and (min-width:$descktop){
-        display: inline-block;
+        display: block;
+        align-items: center;
         &__list{
             display: flex;
+            justify-content: center;
           }
           
         &__item:not(:last-child) {

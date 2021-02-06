@@ -1,5 +1,8 @@
 .advantages{
-    padding: 94px 0 0;
+    @media screen and (min-width: $descktop) {
+        padding: 94px 0 0; 
+    }
+    
     &__title--hidden{
         position: absolute;
         clip: rect(0 0 0 0);
