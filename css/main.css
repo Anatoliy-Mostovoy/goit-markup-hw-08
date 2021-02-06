@@ -1204,20 +1204,36 @@ footer {
 }
 
 .project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: -30px 0 0 -30px;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: -15px;
+  }
 }
 
 .project__list {
-  width: 370px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
   border: 1px solid #eeeeee;
-  margin: 30px 0 0 30px;
-  -ms-flex-preferred-size: calc(100% / 3-30px);
-      flex-basis: calc(100% / 3-30px);
+}
+
+@media screen and (min-width: 768px) {
+  .project__list {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
 }
 
 .project-card {
@@ -1238,13 +1254,11 @@ footer {
 }
 
 .project-card__img {
-  display: block;
   width: 100%;
   margin: 0;
 }
 
 .project-card__list {
-  display: block;
   padding: 20px 24px;
 }
 
@@ -1290,7 +1304,12 @@ footer {
   color: #ffffff;
 }
 
-.project__list:hover .project-card__action {
+.project-card:hover .project-card__action {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.project-card:focus .project-card__action {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
