@@ -1,0 +1,39 @@
+.team-card {
+    display: block;
+    margin-bottom: 30px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.18;
+    background-color: $bgc-main;
+  
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: $tablet){ 
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: $descktop) {  
+        width: calc((100% - 8 * 15px) / 4);
+        margin: 15px; 
+    }
+    &__foto{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    &__sub-title{
+        margin-bottom: 10px;
+        color: $tc-black;
+        font-weight: 500;
+    }
+        
+       &__text{
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+
+}

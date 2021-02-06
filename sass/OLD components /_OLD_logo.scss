@@ -1,0 +1,21 @@
+.logo{
+    font-family: $logo-font-family;
+    display: flex;
+    margin-right: 93px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    &__web {
+        color: $acent;
+      }
+      
+    &__studio {
+        color: $tc-black;
+      }
+      
+    &__studio--invers{
+        color: $logo-invers;
+      }
+  }
+  

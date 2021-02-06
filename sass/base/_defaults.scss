@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+  }
+  
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+  font-family: $main-font-family;
+  letter-spacing: 0.03em;
+  background-color: $bgc-main;
+  color: $tc-main;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+textarea {
+  resize: none;
+}
+
+.section {
+  padding: 60px 0px;
+
+  @media  screen and (min-width: $descktop) {
+    padding: 94px 0;
+    
+  }
+}
+
+.title {
+  margin-bottom: 30px;
+  color: $tc-black;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  @media screen and (min-width: $descktop) {
+    margin-bottom: 50px
+  }
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding: 0px 15px;
+  margin: 0px auto;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }    
+  @media screen and (min-width: $descktop) {
+    width: $descktop;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+footer {
+  padding: 60px 0px;
+  background-color: $bgc-footer;
+}

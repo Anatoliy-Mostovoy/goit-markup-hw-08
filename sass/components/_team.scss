@@ -1,0 +1,15 @@
+.team {
+    background-color: $bgc-second;
+    margin-bottom: -30px;
+    
+    &__list{
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: -15px;
+    }
+    }
+
+  }
+  

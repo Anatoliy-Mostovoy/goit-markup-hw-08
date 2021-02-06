@@ -1,0 +1,59 @@
+.advantages{
+    padding: 94px 0 0;
+    &__title--hidden{
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        }
+
+    &__list {
+        margin-bottom: -30px;
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: -15px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 30px;
+        
+        @media screen and (min-width: $tablet){ 
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+        }
+
+        @media screen and (min-width: $descktop) {  
+        width: calc((100% - 8 * 15px) / 4);
+        margin: 15px; 
+        }
+    }
+
+    &__card {
+        height: 120px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $bgc-second;
+      }
+
+    &__sub-title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        margin-bottom: 10px;
+        color: $tc-black;
+        text-transform: uppercase;
+    } 
+
+    &__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        align-items: stretch;
+    }
+}
