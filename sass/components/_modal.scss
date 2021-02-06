@@ -1,8 +1,8 @@
 
     .modal {
-      height: 581px;
-      width: 528px;
-      padding: 40px 41px;
+      height: 609px;
+      width: 450px;
+      padding: 40px;
       background-color: $bgc-main;
       position: absolute;
       top: 50%;
@@ -12,6 +12,10 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
         transform: translate(-50%, -50%) scale(1);
       @include transit(transform);
+      @media screen and (min-width:$descktop) {
+        height: 581px;
+        width: 528px;
+      }
 
       .backdrop.is-hidden &{
         transform: translate(-50%, -50%) scale(1.1);
@@ -84,23 +88,28 @@
         letter-spacing: 0.01em;
         color: $modal-placeholder;
       }
-      
-      
-      
+    
       &__policy{
         position: relative;
         display: flex;
         align-items: center;
+        justify-content: flex-start;
         margin: 0px;
         padding: 0px;
         margin-bottom: 30px;
       }
       
       &__policy-lable{
-        margin-left: 35px;
-        font-size: 14px;
-        line-height: 1.71;
+        margin-left: 20px;
+        font-size: 12px;
+        line-height: 1.16;
         cursor: pointer;
+        @media screen and (min-width:$descktop){
+          margin-left: 35px;
+          font-size: 14px;
+          line-height: 1.71;
+        }
+        
       }
       
       &__policy-link{
@@ -118,7 +127,7 @@
       
       &__checkbox-icon{
         position: absolute;
-        left: 13px;
+        left: 0;
         top: 50%;
         transform: translateY(-50%);
         display: inline-block;
@@ -129,6 +138,9 @@
         border-radius: 4px;
         transition-duration: $duretion;
         transition-timing-function: $cubic;
+        @media screen and (min-width:$descktop){
+          left: 13px;
+        }
       }
       
       &__checkbox:checked + &__checkbox-icon{

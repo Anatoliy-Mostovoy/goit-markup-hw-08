@@ -16,8 +16,7 @@
             margin: 15px;   
         }
         @media screen and (min-width:$descktop) {
-            width: calc((100% - 6* 15px)/3);
-            
+            width: calc((100% - 6* 15px)/3);  
         }
     }
 }
