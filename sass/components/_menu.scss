@@ -1,0 +1,21 @@
+.menu{
+    position: relative;
+    background-color: #FFFF;
+    width: 100%;
+    height: 100%;
+
+    &__close-button{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border: none;
+        background-color: transparent;
+    }
+
+    &__nav{
+        display: block;
+        color: black;
+    }
+
+
+}
