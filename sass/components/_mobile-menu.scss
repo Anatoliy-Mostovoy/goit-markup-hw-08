@@ -40,7 +40,7 @@
   }
   
   .mobile-menu .page-header__nav-link {
-    font-size: 2rem;
+    font-size: 40px;
   }
   
   .mobile-menu .page-header__contact {
@@ -50,14 +50,14 @@
   }
   
   .mobile-menu .page-header__link {
-    font-size: 2.4rem;
+    font-size: 40px;
     line-height: 28px;
     letter-spacing: 0.02em;
   }
   
   .mobile-menu .page-header__link:last-child {
     font-weight: 500;
-    font-size: 2.4rem;
+    font-size: 34px;
     line-height: 40px;
     letter-spacing: 0.02em;
     color: $acent;
@@ -74,14 +74,13 @@
     }
   
     &__item:first-child .link {
-      padding-left: 0;
+      padding-left: 0;  
     }
   
     &__link {
       display: block;
-      padding: 0 0.5rem;
+      padding: 0 10px ;
       font-size: 18px;
-      
     }
   }
   

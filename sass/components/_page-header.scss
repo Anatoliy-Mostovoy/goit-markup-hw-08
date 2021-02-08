@@ -13,7 +13,7 @@
         }
     }
 
-    &__contact {
+    .page-header__contact {
         display: none;
         @media screen and (min-width:$tablet) {
             display: inline-block;
@@ -90,21 +90,6 @@
         }
     }
 
-    &__nav-link--current{
-        position: relative;
-      }
-      
-    &__nav-link--current::after{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        border-radius: 2px;
-        width: 100%;
-        height: 4px;
-        background-color: $acent;
-    }
-    
     &__nav-link{
         position: relative;
         padding: 32px 0px;
@@ -137,10 +122,26 @@
         transform: scaleX(0);
         @include transit(transform);
     }
-    
-    &__nav-link--current::after,
-    &__nav-link:hover::after,
-    &__nav-link:focus::after {
+
+    &__nav-link--current{
+        position: relative;
+        color: $acent;
+      }
+      
+    &__nav-link--current::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        background-color: $acent;
+    }
+
+    .page-header__nav-link--current::after,
+    .page-header__nav-link:hover::after,
+    .page-header__nav-link:focus::after {
         transform: scaleX(1);
     }
     
