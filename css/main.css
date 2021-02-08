@@ -1713,7 +1713,6 @@ footer {
 }
 
 .footer__mail-input:focus {
-  margin-bottom: 20px;
   border: 1px solid #188ce8;
   outline: none;
 }
