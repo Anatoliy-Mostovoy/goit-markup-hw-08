@@ -92,6 +92,7 @@
         display: block;
         @media screen and (min-width:$descktop){
             display: flex;
+            align-items: center;
         }
       }
 
