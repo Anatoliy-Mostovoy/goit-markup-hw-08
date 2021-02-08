@@ -6,9 +6,9 @@
   
     width: 100%;
     min-height: 100vh;
-  
-    background: teal;
     z-index: 20;
+
+    background-color: white;
   
     &.is-open {
       display: block;
@@ -34,3 +34,54 @@
       display: block;
     }
   }
+
+  .mobile-menu .page-header__nav-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  
+  .mobile-menu .page-header__nav-link {
+    font-size: 2rem;
+  }
+  
+  .mobile-menu .page-header__contact {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 64px;
+  }
+  
+  .mobile-menu .page-header__link {
+    font-size: 2.4rem;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+  
+  .mobile-menu .page-header__link:last-child {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: $acent;
+    margin-bottom: 32px;
+  }
+  
+  .social {
+    display: flex;
+    color: $acent;
+    margin-top: 64px;
+  
+    &__item:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  
+    &__item:first-child .link {
+      padding-left: 0;
+    }
+  
+    &__link {
+      display: block;
+      padding: 0 0.5rem;
+      font-size: 18px;
+      
+    }
+  }
+  

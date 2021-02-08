@@ -6,7 +6,7 @@
         align-items: center;
     }
 
-    &__nav-list  {
+    .page-header__nav-list  {
         display: none;
         @media screen and (min-width:$tablet) {
             display: flex;
