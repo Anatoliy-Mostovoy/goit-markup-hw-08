@@ -1,0 +1,36 @@
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    min-height: 100vh;
+  
+    background: teal;
+    z-index: 20;
+  
+    &.is-open {
+      display: block;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 48px 40px;
+      min-height: 100vh;
+    }
+  }
+  
+  .is-open .btn-menu-open {
+    display: none;
+  }
+  
+  .btn-menu-close {
+    display: none;
+  
+    .is-open & {
+      display: block;
+    }
+  }

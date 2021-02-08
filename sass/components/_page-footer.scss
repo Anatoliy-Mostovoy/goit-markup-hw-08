@@ -1,5 +1,5 @@
 .footer {
- 
+  
     text-align: center;
     @media screen and (min-width:$descktop) {
         display: flex;
@@ -96,7 +96,7 @@
       }
 
       &__mail-input{
-        width: 450px;
+        width: 100%;
         height: 50px;
         padding: 0px;
         margin-bottom: 20px;
