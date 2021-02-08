@@ -4,7 +4,7 @@
     @media screen and (min-width:$descktop) {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: end;
     }
 
     &__main {
