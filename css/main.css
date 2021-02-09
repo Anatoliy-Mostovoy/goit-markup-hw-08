@@ -1615,6 +1615,15 @@ footer {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__info-logo {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-left: 0;
+  }
+}
+
 .footer__contact {
   margin-bottom: 60px;
   font-style: normal;
@@ -1626,6 +1635,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .footer__contact {
     margin-bottom: 0;
+    text-align: left;
   }
 }
 

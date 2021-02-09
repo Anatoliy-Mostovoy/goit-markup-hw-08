@@ -25,6 +25,10 @@
     &__info-logo{
         justify-content: center;
         margin-bottom: 20px;
+        @media screen and (min-width: $descktop) {
+          justify-content: left;
+          margin-left: 0;
+        }
       }
 
     &__contact {
@@ -35,6 +39,7 @@
         line-height: 1.71;
         @media screen and (min-width: $descktop) {
             margin-bottom: 0;
+            text-align: left;
         }
     }
 
@@ -42,6 +47,7 @@
         display: inline-block;
         margin-bottom: 9px;
         color: $tc-white;
+        
       }
       
       &__link {
